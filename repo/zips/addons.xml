@@ -34,7 +34,7 @@ v2021.06.01
 <addon id="repository.denham" name="Denham Repository" version="1.0" provider-name="Denham Performance">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
-			<import addon="plugin.program.number1guru" version="2021.06.01"/>
+	    <import addon="plugin.program.number1guru" version="2021.06.01"/>
 
         </requires>				  
 	    <extension point="xbmc.addon.repository" name="Denham Repository">
