@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.number1guru" name="[COLOR red][B]#[/B][/COLOR]1[COLOR blue][B] Guru[/B][/COLOR][COLOR yellow] Wizard[/COLOR]" version="2021.06.01" provider-name="Number1Guru">
+  <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Welcome to the Number1Guru Wizard</summary>
+    <description lang="en">This Software is designed to keep your KODI device up to date and running smoothly, I recomend that all maintanance is done monthly!</description>
+    <disclaimer lang="en">For help and support ... Please email our group!</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email>kodi@number1guru.com</email>
+    <source></source>
+    <news>v2021.06.01 (06/01/2021) added custom excludes to settings options and created correct paths to build pages via version update</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.denham" name="Denham Repository" version="1.0" provider-name="Denham Performance">
+    <extension point="xbmc.addon.repository" name="Example Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/DenhamPerformance/repository.denham/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/DenhamPerformance/repository.denham/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/DenhamPerformance/repository.denham/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Denham Repository</summary>
+        <description>Denham Builds</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
