@@ -2,9 +2,7 @@
 <addons>
 <addon id="plugin.program.number1guru" name="[COLOR red][B]#[/B][/COLOR]1[COLOR blue][B] Guru[/B][/COLOR][COLOR yellow] Wizard[/COLOR]" version="2021.06.01" provider-name="Number1Guru">
   <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>executable</provides>
