@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addons>
-<addon id="plugin.program.denham" name="[COLOR red][B]#[/B][/COLOR]1[COLOR blue][B] Guru[/B][/COLOR][COLOR yellow] Wizard[/COLOR]" version="2021.06.01" provider-name="#1 Guru">
+<addon id="plugin.program.number1guru" name="[COLOR red][B]#[/B][/COLOR]1[COLOR blue][B] Guru[/B][/COLOR][COLOR yellow] Wizard[/COLOR]" version="2021.06.01" provider-name="Number1Guru">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -15,7 +14,7 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Welcome to the #1 Guru Wizard</summary>
+        <summary lang="en">Welcome to the Number1Guru Wizard</summary>
         <description lang="en">[COLOR red][B]#[/B][/COLOR]1[COLOR blue][B] Guru[/B][/COLOR][COLOR yellow] Wizard[/COLOR] offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
@@ -35,6 +34,8 @@ v2021.06.01
 <addon id="repository.denham" name="Denham Repository" version="1.0" provider-name="Denham Performance">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
+			<import addon="plugin.program.number1guru" version="2021.06.01"/>
+
         </requires>				  
 	    <extension point="xbmc.addon.repository" name="Denham Repository">
             <info compressed="false">https://raw.githubusercontent.com/DenhamPerformance/repository.denham/master/repo/zips/addons.xml</info>
