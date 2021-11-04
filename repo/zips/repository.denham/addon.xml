@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.denham" name="Denham Repository" version="11.4.2021" provider-name="Denham Performance">
+<addon id="repository.denham" name="Denham Repository" version="1.0" provider-name="Denham Performance">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
