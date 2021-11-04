@@ -1,0 +1,5 @@
+[B]Version 2.0.16 - 28 October 2021[/B]
+- update tamilgun scraper
+- movierulz domain change
+- Online movie pk domain change
+- cinevez domain change
