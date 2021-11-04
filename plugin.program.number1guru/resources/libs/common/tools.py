@@ -187,7 +187,7 @@ def file_count(home, excludes=True):
     item = []
     for base, dirs, files in os.walk(home):
         if excludes:
-            dirs[:] = [d for d in dirs if d not in CONFIG.EXCLUDE_DIRS]
+            dirs[:] = [d for d in dirs if os.path.join(base, d) not in CONFIG.EXCLUDE_DIRS]
             files[:] = [f for f in files if f not in CONFIG.EXCLUDE_FILES]
         for file in files:
             item.append(file)
@@ -216,8 +216,8 @@ def ensure_folders(folder=None):
         dialog = xbmcgui.Dialog()
 
         dialog.ok(CONFIG.ADDONTITLE,
-                      "[COLOR {0}]Error creating add-on directories:[/COLOR]".format(CONFIG.COLOR2),
-                      "[COLOR {0}]{1}[/COLOR]".format(CONFIG.COLOR1, name))
+                      "[COLOR {0}]Error creating add-on directories:[/COLOR]".format(CONFIG.COLOR2)
+                      +'\n'+"[COLOR {0}]{1}[/COLOR]".format(CONFIG.COLOR1, name))
 
 #########################
 #  Utility Functions    #
@@ -397,11 +397,7 @@ def platform():
 
 
 def kodi_version():
-    if 17.0 <= CONFIG.KODIV <= 17.9:
-        vername = 'Krypton'
-    elif 18.0 <= CONFIG.KODIV <= 18.9:
-        vername = 'Leia'
-    elif 19.0 <= CONFIG.KODIV <= 19.9:
+    if 19.0 <= CONFIG.KODIV <= 19.9:
         vername = 'Matrix'
     else:
         vername = "Unknown"
