@@ -1,7 +1,7 @@
 # Kodi addons developed by gujal
 
 Latest repository zip file is
-[repository.gujal-2.0.0](https://github.com/DenhamPerformance/repository.denham/raw/master/zips/repository.denham/repository.denham-1.0.zip)
+[repository.denham-1.0](https://github.com/DenhamPerformance/repository.denham/raw/master/zips/repository.denham/repository.denham-1.0.zip)
 <br>
 
 ### Disclaimer
